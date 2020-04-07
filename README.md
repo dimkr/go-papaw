@@ -8,7 +8,7 @@
 
 ## Overview
 
-go-papaw is a [Go](https://golang.org) package for [papaw](http://github.com/dimkr/papaw).
+go-papaw is a [Go](https://golang.org) module for [papaw](http://github.com/dimkr/papaw).
 
 ## Implementation
 
@@ -16,7 +16,7 @@ go-papaw is implemented using [cgo](https://golang.org/cmd/cgo).
 
 ## Usage
 
-Just import the package!
+Just import the module!
 
 ```go
 package main
