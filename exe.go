@@ -34,7 +34,7 @@ func init() {
 		return
 	}
 
-	os.Setenv("   ", exe)
+	os.Setenv("    ", exe)
 	C.papaw_hide_exe()
 	os.Remove(exe)
 }
