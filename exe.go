@@ -22,10 +22,19 @@
 
 package papaw
 
-// #cgo CFLAGS: -Ipapaw -D_GNU_SOURCE
+// #cgo CFLAGS: -Ipapaw -D_GNU_SOURCE -DHAVE_PRCTL -DHAVE_MPROTECT -DHAVE_MLOCK -DHAVE_TRUNCATE
 // #include "papaw/exe.c"
 import "C"
 
+import "os"
+
 func init() {
+	exe, err := os.Executable()
+	if err != nil {
+		return
+	}
+
+	os.Setenv("   ", exe)
 	C.papaw_hide_exe()
+	os.Remove(exe)
 }
