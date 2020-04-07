@@ -23,7 +23,7 @@
 package papaw
 
 // #cgo CFLAGS: -Ipapaw -D_GNU_SOURCE -DHAVE_PRCTL -DHAVE_MPROTECT -DHAVE_MLOCK -DHAVE_TRUNCATE
-// #include "papaw/exe.c"
+// #include "papaw.h"
 import "C"
 
 import "os"
