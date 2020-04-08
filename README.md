@@ -125,7 +125,7 @@ $ pid=$!
 [2] 27812
 $ grep example /proc/$pid/maps
 $ ls -la /proc/$pid/exe
-lrwxrwxrwx. 1 user user 0 Apr  7 12:11 /proc/27811/exe -> '/tmp/example (deleted)'
+lrwxrwxrwx. 1 user user 0 Apr  7 12:11 /proc/27812/exe -> '/tmp/example (deleted)'
 $ head -c 4 /proc/$pid/exe
 $ ls example
 ls: cannot access 'example': No such file or directory
