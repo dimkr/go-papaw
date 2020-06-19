@@ -69,7 +69,6 @@ func getInputArchitecture(exe *elf.File) string {
 
 func getStub(algo, arch string) ([]byte, error) {
 	client := http.Client{Timeout: downloadTimeout}
-	log.Print(repoURL + fmt.Sprintf("/releases/latest/download/papaw-%s-%s", algo, arch))
 	response, err := client.Get(repoURL + fmt.Sprintf("/releases/latest/download/papaw-%s-%s", algo, arch))
 	if err != nil {
 		return nil, err
